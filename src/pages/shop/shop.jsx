@@ -1,28 +1,19 @@
 import React from 'react';
 import { PRODUCTS } from "../../products.js";
-import Product from './product.jsx';
+import { Product } from './product.jsx';
 import "./shop.css"
 
-function Shop() {
+export const Shop = () => {
     return (
         <div className="shop">
             <div className="shopTitle">
                 <h1>Minimalist Shop</h1>
             </div>
-            <div   className="products">
-                {PRODUCTS.map((product) =>
-                
-                   
-                    <div key={product.id}>
-                    <Product data={product} />
-                    </div>
-                    
-                    )}
-                    
-            </div>
-
+            <div className="products">
+        {PRODUCTS.map((product) => (
+          <Product data={product} key={product.id} />
+        ))}
+      </div>
         </div>
     )
 }
-
-export default Shop;
