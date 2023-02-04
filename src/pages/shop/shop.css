@@ -24,7 +24,8 @@
   }
   
   .product img {
-    width: 400px;
+    width: 100%;
+    max-width:300px;
   }
   
   .product .description {
@@ -52,3 +53,19 @@
     color: white;
     cursor: pointer;
   }
+
+  @media screen and (min-width: 320px) {
+    .products {
+      grid-template-columns: 1fr;
+  }
+.product img {
+  width:200px
+}
+
+.shopTitle {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 18px;
+}
+
+}
