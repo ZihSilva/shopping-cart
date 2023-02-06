@@ -1,20 +1,24 @@
-.btn {
-    max-width: auto;
-     background-color: rgb(190, 211, 236);
-     color: rgb(25, 99, 69);
-     padding: 1.4rem 2.4rem;
-     border: none;
-     text-transform: uppercase;
-     text-align: center;
-     cursor: pointer;
-     transition: all 0.3s ease;
-     -webkit-transition: all 0.3s ease 0s;
-     -moz-transition: all 0.3s ease 0s;
-     -o-transition: all 0.3s ease 0s;
-     }
-     
-   button:hover,
-   button:active {
-       box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
-       transform: scale(0.96);
-   }
+:root {
+    --primary: #1888ff;
+  }
+  
+  .btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--primary);
+  }
+  
+  .btn:hover {
+    padding: 6px 18px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease-out;
+  }
