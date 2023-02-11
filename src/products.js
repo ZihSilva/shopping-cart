@@ -7,20 +7,22 @@ import product6 from "./assets/6.webp";
 import product7 from "./assets/7.webp";
 import product8 from "./assets/8.webp";
 import product9 from "./assets/9.webp";
-// import product10 from "./assets/10.webp";
+import product10 from "./assets/10.webp";
+import vans from "./assets/iphonexr.jpg";
+import iphone from "./assets/vans.jpg"
 
 export const PRODUCTS = [
 
     {
         id:1,
         productName: "bag",
-        price: 16.0,
+        price: 250,
         productImage: product1,
     },
     {
         id:2,
         productName: "frame",
-        price: 10.0,
+        price: 2.100,
         productImage: product2,
     },
     {
@@ -65,12 +67,25 @@ export const PRODUCTS = [
         price: 12.0,
         productImage: product9,
     },
-    // {
-    //     id:10,
-    //     productName: "calendar",
-    //     price: 6.0,
-    //     productImage: product10,
-    // },
+    {
+        id:10,
+        productName: "calendar",
+        price: 6.0,
+        productImage: product10,
+    },
 
-    
+    {
+        id:11,
+        productName: "vans",
+        price: 250,
+        productImage: vans,
+    },
+
+    {
+        id:12,
+        productName: "iphone",
+        price: 2100,
+        productImage: iphone,
+    },
+
 ]

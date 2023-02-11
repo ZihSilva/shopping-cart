@@ -10,7 +10,7 @@
 
 <br>
 <h2 align="center">:hourglass: Project Status </h2>
-<h4> :white_check_mark: Desktop - COMPLETED :white_check_mark: </h4>
+<h4> :white_check_mark: Desktop - Coming soon :white_check_mark: </h4>
 
 <br>
 <h2 align="center">:hammer: Project Features </h2>

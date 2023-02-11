@@ -1,5 +1,5 @@
 import React from "react";
 
-export const Contact = () => {
-  return <div>contact</div>;
+export const Login = () => {
+  return <div>Login</div>;
 };

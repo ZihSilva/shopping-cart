@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import Dropdown from '../Dropdown/Dropdown.js';
+// import Dropdown from '../Dropdown/Dropdown.js';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -20,7 +19,7 @@ function Navbar() {
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth < 768) {
       setDropdown(false);
     } else {
       setDropdown(false);
@@ -30,32 +29,17 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          Minimalist Shop
-          <i class='fab fa-firstdraft' />
-        </Link>
+      
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <div className="items">
           <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+            <Link to='/' className='nav-links' 
+            onClick={closeMobileMenu}>
               Home
             </Link>
-          </li>
-          <li
-            className='nav-item'
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          >
-            <Link
-              to='/services'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Products <i className='fas fa-caret-down' />
-            </Link>
-            {dropdown && <Dropdown />}
           </li>
           <li className='nav-item'>
             <Link
@@ -66,26 +50,41 @@ function Navbar() {
               About us
             </Link>
           </li>
+          </div>
+          <li
+            className='nav-item'
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
+            {dropdown}
+          </li>
+         
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            <i className="fa-solid fa-bag-shopping"></i>
+            Minimalist Shop
+          </Link>
+          <div className="icons">
           <li className='nav-item'>
             <Link
-              to='/contact-us'
-              className='nav-links'
+              to='/login'
+              className='nav-links-icon'
               onClick={closeMobileMenu}
             >
-              Contact 
+              <i className="fa-solid fa-user"></i>
             </Link>
           </li>
-          <li>
+          <li className='nav-item'>
             <Link
-              to='/sign-up'
-              className='nav-links-mobile'
+              to='/cart'
+              className='nav-links-icon'
               onClick={closeMobileMenu}
             >
-              Sign Up
-            </Link>
+              <i className="fa-solid fa-cart-shopping"></i>
+              </Link>
           </li>
+          </div>
         </ul>
-        <Button />
+    
       </nav>
     </>
   );
