@@ -1,7 +1,7 @@
 .shopTitle {
   /* margin-top: 10px; */
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin-left: 40px;
   font-size: 40px;
 }

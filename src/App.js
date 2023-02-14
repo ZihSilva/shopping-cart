@@ -8,6 +8,7 @@ import { ShopContextProvider } from "./context/shop-context";
 import { Auth0Provider } from "@auth0/auth0-react";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/HomePage/Home";
+import SignUp from "./pages/SignUp"
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
               <Route path="/shop" element={<Shop />}></Route>
               <Route path="/login" element={<Login />} />
               <Route path="cart" element={<Cart />}></Route>
+              <Route path="sign-up" element={<SignUp />}></Route>
+
             </Routes>
           </Router>
         </ShopContextProvider>

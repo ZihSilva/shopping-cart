@@ -66,7 +66,7 @@ function Navbar() {
           <div className="icons">
           <li className='nav-item'>
             <Link
-              to='/login'
+              to='/sign-up'
               className='nav-links-icon'
               onClick={closeMobileMenu}
             >
