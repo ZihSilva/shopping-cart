@@ -13,7 +13,7 @@
   }
   
   .dropdown-menu li:hover {
-    background: transparent;
+    background: red;
   }
   
   .dropdown-menu.clicked {

@@ -10,8 +10,8 @@ export const Shop = () => {
         <h1>Store</h1>
       </div>
       <div className="searchIcon" >       
-         <i class="fa-solid fa-magnifying-glass"></i>
-         <i class="fa-regular fa-bars-filter"></i>
+         <i className="fa-solid fa-magnifying-glass"></i>
+         <i className="fa-regular fa-bars-filter"></i>
       </div>
       <div className="products">
 

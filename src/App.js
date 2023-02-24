@@ -8,7 +8,7 @@ import { ShopContextProvider } from "./context/shop-context";
 import { Auth0Provider } from "@auth0/auth0-react";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/HomePage/Home";
-import SignUp from "./pages/SignUp"
+import SignUp from "./pages/SignUp/SignUp"
 
 function App() {
   return (

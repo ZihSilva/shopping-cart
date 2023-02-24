@@ -1,35 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-// import Dropdown from '../Dropdown/Dropdown.js';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
 
-  const onMouseLeave = () => {
-    if (window.innerWidth < 768) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
+
+
+
 
   return (
     <>
       <nav className='navbar'>
-      
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
@@ -51,17 +37,11 @@ function Navbar() {
             </Link>
           </li>
           </div>
-          <li
-            className='nav-item'
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          >
-            {dropdown}
-          </li>
+    
          
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             <i className="fa-solid fa-bag-shopping"></i>
-            Minimalist Shop
+            As new 
           </Link>
           <div className="icons">
           <li className='nav-item'>
@@ -84,7 +64,6 @@ function Navbar() {
           </li>
           </div>
         </ul>
-    
       </nav>
     </>
   );
